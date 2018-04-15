@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="UTF-8">
+    <title>Encryptor</title>
+
+    <script src="jQuery-3.3.1.min.js"></script>
+    <script src="jqueryIndex.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Encryptor/Decryptor</h1>
+            <p>This is a tool made just for fun, it uses an algorithm for encryption that I made myself.</p>
+            <p>If you would like to access the API that I created for this replace index.html in the URL with api.php, then use ?encrypt=word or ?decrypt=word replacing word as you please at the end of the URL.  Thank you!</p>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="choice">Type either decrypt or encrypt</label>
+                <select id="choice" class="form-control">
+                    <option>Encrypt</option>
+                    <option>Decrypt</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="word">Type in ONE word to perform the above process on:</label>
+                <textarea placeholder="Type Here..." id="word" cols="30" rows="1" class="form-control"></textarea>
+            </div>
+            <button class="btn btn-primary" type="button" onClick="onSubmit()">Result Please!</button>
+        </form>
+        <p id="result">Result will go HERE!</p>
+    </div>
+
+
+</body>
+</html>

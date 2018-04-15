@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^api/encrypt/(.*)$ Controller.php?choice=encrypt&wd=$1 [nc]
+RewriteRule ^api/decrypt/(.*)$ Controller.php?choice=decrypt&wd=$1 [nc]
