@@ -5,7 +5,7 @@ info:
   version: '0.1'
   title: defaultTitle
 paths:
-  '/apiwork/api/{param0}/{param1}':
+  '/encryptapi/api/{param0}/{param1}':
     get:
       parameters:
         - name: param0
