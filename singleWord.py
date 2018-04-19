@@ -6,7 +6,7 @@ import mysql.connector
 letterChart = {}
 
 #establishing connection with mySQL database and running query
-cnx = mysql.connector.connect(user="root", password="", host="localhost", database="letter_chart")
+cnx = mysql.connector.connect(user="root", password="root", host="localhost", database="letter_chart")
 cursor = cnx.cursor()
 
 query = "SELECT * FROM chart"
